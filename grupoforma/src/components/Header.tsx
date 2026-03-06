@@ -4,7 +4,7 @@ export function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <div className="font-bold text-2xl text-blue-900">Logo RH</div>
+        <div className="font-bold text-2xl text-blue-900">GRUPO FORMA</div>
         <nav className="hidden md:flex gap-6">
           <Link
             href="/"
