@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"; // <-- Importação do Image adicionada aqui
 import { ArrowRight } from "lucide-react";
 
 export function Hero() {
@@ -35,14 +36,14 @@ export function Hero() {
 
         {/* Coluna da Direita: Espaço para Imagem */}
         <div className="relative h-[400px] lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100 flex items-center justify-center">
-          {/* Faremos um fundo simulando onde a foto vai ficar */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-blue-100 to-white opacity-90"></div>
-          <span className="relative text-gray-500 font-medium text-center px-4">
-            [Espaço para foto corporativa da equipe] <br />
-            <span className="text-sm font-normal">
-              Substituiremos depois pelo componente Image do Next.js
-            </span>
-          </span>
+          {/* O componente Image entrou aqui, substituindo os textos e a div de fundo */}
+          <Image
+            src="/images/hero.jpg"
+            alt="Equipe trabalhando"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
       </div>
     </section>

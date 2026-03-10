@@ -1,29 +1,30 @@
 import { Target, Award, ShieldCheck, Clock } from "lucide-react";
 
-// EDITE OS TEXTOS ABAIXO COM OS DADOS DO SITE ANTIGO
+// Textos profissionais preenchidos para a fase de testes
 const differentials = [
   {
     icon: Award,
     title: "Experiência Comprovada",
     description:
-      "[COLE AQUI: Texto sobre os anos de mercado ou cases de sucesso do site antigo.]",
+      "Com sólida atuação no mercado corporativo, acumulamos cases de sucesso e um profundo conhecimento das dinâmicas de RH em diversos setores.",
   },
   {
     icon: Target,
     title: "Atendimento Personalizado",
     description:
-      "[COLE AQUI: Texto sobre como o atendimento é feito sob medida.]",
+      "Entendemos que cada organização é única. Nossos consultores desenham processos sob medida, perfeitamente alinhados à cultura do seu negócio.",
   },
   {
     icon: ShieldCheck,
     title: "Segurança Jurídica",
-    description: "[COLE AQUI: Texto sobre compliance e segurança trabalhista.]",
+    description:
+      "Atuamos com rigoroso compliance trabalhista. Garantimos que todos os processos sigam estritamente a legislação vigente, mitigando qualquer risco.",
   },
   {
     icon: Clock,
     title: "Agilidade nos Processos",
     description:
-      "[COLE AQUI: Texto sobre a rapidez na entrega dos candidatos ou serviços.]",
+      "Utilizamos tecnologia de ponta e um amplo banco de talentos para reduzir o tempo de contratação, sem abrir mão da qualidade técnica.",
   },
 ];
 

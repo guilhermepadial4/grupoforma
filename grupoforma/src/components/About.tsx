@@ -1,3 +1,4 @@
+import Image from "next/image"; // <-- Importação do Image adicionada
 import { CheckCircle2 } from "lucide-react";
 
 export function About() {
@@ -6,10 +7,13 @@ export function About() {
       <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
         {/* Espaço para Imagem Institucional */}
         <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-xl bg-gray-100 flex items-center justify-center">
-          <div className="absolute inset-0 bg-blue-900/10"></div>
-          <span className="text-gray-500 font-medium px-4 text-center">
-            [COLOQUE AQUI A FOTO DA EMPRESA/ESCRITÓRIO]
-          </span>
+          {/* O componente Image entrou aqui */}
+          <Image
+            src="/images/about.jpg"
+            alt="Escritório e equipe do Grupo Forma"
+            fill
+            className="object-cover"
+          />
         </div>
 
         {/* Conteúdo de Texto */}
@@ -18,7 +22,6 @@ export function About() {
             Sobre o Grupo Forma
           </h2>
 
-          {/* COLE O TEXTO DO SITE ANTIGO AQUI */}
           <div className="text-gray-600 space-y-4 mb-8 text-lg">
             <p>
               Com anos de atuação no mercado, o Grupo Forma se destaca por
@@ -27,16 +30,19 @@ export function About() {
               objetivos de negócio da sua empresa.
             </p>
             <p>
-              [COLE MAIS PARÁGRAFOS DA HISTÓRIA AQUI. Substitua este texto pelo
-              original do site antigo.]
+              Nossa trajetória é construída com base na confiança e em
+              metodologias ágeis de recrutamento. Acreditamos que o sucesso de
+              uma organização começa com as pessoas certas nos lugares certos, e
+              trabalhamos incansavelmente para promover esses encontros que
+              transformam negócios.
             </p>
           </div>
 
           {/* Tópicos de Missão/Visão/Valores */}
           <div className="space-y-4">
             {[
-              "Missão: [COLE A MISSÃO DO SITE ANTIGO]",
-              "Visão: [COLE A VISÃO DO SITE ANTIGO]",
+              "Missão: Potencializar o crescimento das empresas através da atração, desenvolvimento e gestão inteligente de talentos.",
+              "Visão: Ser a consultoria de RH referência no mercado nacional, reconhecida pela excelência, inovação e resultados entregues.",
               "Valores: Ética, Transparência, Foco no Cliente e Inovação.",
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-3">

@@ -23,7 +23,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-bold text-gray-900">Telefone</h4>
                   <p className="text-gray-600">
-                    [COLE O TELEFONE DO SITE ANTIGO]
+                    +55 (11) 4667-9338
                   </p>
                 </div>
               </div>
@@ -34,7 +34,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">E-mail</h4>
-                  <p className="text-gray-600">[COLE O EMAIL DO SITE ANTIGO]</p>
+                  <p className="text-gray-600">comercial@grupoforma.com.br</p>
                 </div>
               </div>
 
@@ -45,7 +45,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-bold text-gray-900">Endereço</h4>
                   <p className="text-gray-600">
-                    [COLE O ENDEREÇO DO SITE ANTIGO]
+                    R.Carlos Domingues Tantico, 192 Itapecirica da Serra - SP
                   </p>
                 </div>
               </div>
