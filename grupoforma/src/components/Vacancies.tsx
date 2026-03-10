@@ -21,9 +21,15 @@ export function Vacancies() {
               recentes.
             </p>
           </div>
-          <button className="text-blue-600 font-semibold hover:text-blue-800 transition-colors flex items-center gap-2">
+          {/* Trocado para <a> apontando para o portal */}
+          <a
+            href="https://grupoforma.selecty.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 font-semibold hover:text-blue-800 transition-colors flex items-center gap-2"
+          >
             Ver todas as vagas <ArrowRight className="w-5 h-5" />
-          </button>
+          </a>
         </div>
 
         <div className="grid gap-4">
@@ -45,9 +51,15 @@ export function Vacancies() {
                   </span>
                 </div>
               </div>
-              <button className="px-6 py-2 bg-blue-50 text-blue-600 font-medium rounded-lg hover:bg-blue-600 hover:text-white transition-colors w-full md:w-auto">
+              {/* Trocado para <a> apontando para o portal */}
+              <a
+                href="https://grupoforma.selecty.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2 bg-blue-50 text-blue-600 font-medium rounded-lg hover:bg-blue-600 hover:text-white transition-colors w-full md:w-auto text-center inline-block"
+              >
                 Candidatar-se
-              </button>
+              </a>
             </div>
           ))}
         </div>
