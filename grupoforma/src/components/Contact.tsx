@@ -12,41 +12,60 @@ export function Contact() {
             </h2>
             <p className="text-gray-600 text-lg mb-8">
               Preencha o formulário ou entre em contato através dos nossos
-              canais de atendimento. Estamos prontos para ajudar sua empresa.
+              canais de atendimento. Estamos prontos para impulsionar o seu
+              negócio.
             </p>
 
             <div className="space-y-6">
+              {/* Telefone */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">
                   <Phone className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Telefone</h4>
-                  <p className="text-gray-600">
+                  <a
+                    href="tel:+551146679338"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
+                  >
                     +55 (11) 4667-9338
-                  </p>
+                  </a>
                 </div>
               </div>
 
+              {/* E-mail */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">
                   <Mail className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">E-mail</h4>
-                  <p className="text-gray-600">comercial@grupoforma.com.br</p>
+                  <a
+                    href="mailto:comercial@grupoforma.com.br"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
+                  >
+                    comercial@grupoforma.com.br
+                  </a>
                 </div>
               </div>
 
+              {/* Endereço Resumido com Link Completo para o Maps */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">
                   <MapPin className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-900">Endereço</h4>
-                  <p className="text-gray-600">
-                    R.Carlos Domingues Tantico, 192 Itapecirica da Serra - SP
-                  </p>
+                  <h4 className="font-bold text-gray-900 mb-1">Endereço</h4>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=R.+Carlos+Domingues+Tantico,+192+-+Jardim+Tereza+Maria,+Itapecerica+da+Serra+-+SP,+06850-670"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-blue-600 transition-colors leading-relaxed block"
+                  >
+                    R. Carlos Domingues Tantico, 192
+                    <br />
+                    Itapecerica da Serra - SP
+                  </a>
                 </div>
               </div>
             </div>
@@ -101,7 +120,7 @@ export function Contact() {
               </div>
 
               <button
-                type="submit"
+                type="button"
                 className="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300"
               >
                 Enviar Mensagem
