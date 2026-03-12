@@ -3,9 +3,9 @@
 import CountUp from "react-countup";
 
 const stats = [
-  { num: 500, suffix: "", text: "Empresas Atendidas" },
-  { num: 1200, suffix: "", text: "Profissionais Contratados" },
-  { num: 15, suffix: "", text: "Anos de Experiência" },
+  { num: 559, suffix: "", text: "Empresas Atendidas" },
+  { num: 42850, suffix: "", text: "Profissionais Contratados" },
+  { num: 23, suffix: "", text: "Anos de Experiência" },
   { num: 98, suffix: "%", text: "Satisfação de Clientes" },
 ];
 
@@ -20,13 +20,14 @@ export function Stats() {
               className="flex flex-col items-center justify-center p-4"
             >
               <div className="text-4xl md:text-5xl font-extrabold text-blue-600 mb-2">
-                {/* O componente CountUp faz a mágica acontecer */}
+                {/* Adicionado o separator="." para formatar casas de milhar */}
                 <CountUp
                   end={stat.num}
                   suffix={stat.suffix}
                   duration={2.5}
-                  enableScrollSpy={true} // Só anima quando o usuário rolar até aqui
-                  scrollSpyOnce={true} // Anima apenas na primeira vez
+                  separator="."
+                  enableScrollSpy={true}
+                  scrollSpyOnce={true}
                 />
               </div>
               <p className="text-gray-600 font-medium text-sm md:text-base">

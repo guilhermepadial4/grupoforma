@@ -90,7 +90,6 @@ export function Footer() {
                   comercial@grupoforma.com.br
                 </a>
               </li>
-              {/* Endereço atualizado e clicável */}
               <li>
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=R.+Carlos+Domingues+Tantico,+192+-+Itapecerica+da+Serra+-+SP"
@@ -115,12 +114,46 @@ export function Footer() {
         {/* Linha de Copyright (Fundo do Rodapé) */}
         <div className="pt-8 border-t border-blue-800/50 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <p className="text-blue-300 text-sm">
-            &copy; {new Date().getFullYear()} Grupo Forma - Todos os direitos
+            © {new Date().getFullYear()} Grupo Forma - Todos os direitos
             reservados.
           </p>
-          <p className="text-blue-400/50 text-xs">
-            Desenvolvido com excelência
-          </p>
+
+          {/* Nova Seção de Créditos Minimalista com dois links */}
+          <div className="flex items-center gap-3 text-blue-400/50 text-xs">
+            <span>Desenvolvido com excelência</span>
+
+            <div className="flex items-center gap-2">
+              {/* Link 1: Seu LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/guilhermepadial/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn Guilherme"
+                className="opacity-70 hover:opacity-100 transition-opacity"
+              >
+                <img
+                  src="/images/dev-logo.png"
+                  alt="Logo Guilherme"
+                  className="h-6 w-auto"
+                />
+              </a>
+
+              {/* Link 2: LinkedIn do seu Amigo */}
+              <a
+                href="https://www.linkedin.com/in/leonardo-lopes-lima-242042222/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn Leonardo"
+                className="opacity-70 hover:opacity-100 transition-opacity"
+              >
+                <img
+                  src="/images/dev2-logo.png"
+                  alt="Logo Amigo"
+                  className="h-6 w-auto"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
