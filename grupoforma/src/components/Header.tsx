@@ -17,14 +17,23 @@ export function Header() {
   ];
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        {/* Logo em Texto - Igual ao seu print */}
+        {/* Logo em Texto Tipográfico (Estilo em duas cores com hover) */}
         <Link
           href="/"
-          className="font-extrabold text-2xl text-blue-950 uppercase tracking-tight"
+          className="text-2xl lowercase tracking-tight flex items-center group" // Adicionado "group" para controlar o hover dos filhos
         >
-          Grupo Forma
+          {/* Adicionado hover:text-blue-600 para mudar a cor no hover */}
+          <span className="text-blue-400 font-bold transition-colors group-hover:text-blue-600">
+            www.
+          </span>
+          <span className="text-blue-950 font-extrabold transition-colors group-hover:text-blue-600">
+            grupoforma
+          </span>
+          <span className="text-blue-400 font-bold transition-colors group-hover:text-blue-600">
+            .com.br
+          </span>
         </Link>
 
         {/* Menu Desktop (Escondido no celular) */}
@@ -56,14 +65,14 @@ export function Header() {
 
       {/* Dropdown Menu Mobile (Abre quando clica no botão hambúrguer) */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0">
+        <div className="md:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0 z-50">
           <nav className="flex flex-col px-6 py-6 space-y-6">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)} // Fecha o menu ao clicar em um link
-                className="text-gray-700 hover:text-blue-600 font-semibold text-lg"
+                className="text-gray-700 hover:text-blue-600 font-semibold text-lg transition-colors"
               >
                 {link.name}
               </Link>
